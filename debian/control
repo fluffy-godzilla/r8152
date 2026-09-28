@@ -1,0 +1,18 @@
+Source: r8152
+Section: kernel
+Priority: optional
+Maintainer: alex <alex@localhost>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-dkms,
+Standards-Version: 4.6.2
+Homepage: localhost
+Testsuite: autopkgtest-pkg-dkms
+
+Package: r8152-dkms
+Architecture: all
+Depends: ${misc:Depends}
+Description: r8152 device driver
+ This package contains the up-to-date driver for r8152 devices (namely TP-Link UE300) and uses DKMS to
+ automatically build the kernel module.

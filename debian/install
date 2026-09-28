@@ -1,0 +1,2 @@
+#!/bin/bash
+echo src/* /usr/src/${PACKAGE_NAME}-${PACKAGE_VERSION}
